@@ -1,0 +1,314 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{31B60F40-4986-4C4C-878E-B91B28D1E545}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <StartupObject>PID_2017_Castro.My.MyApplication</StartupObject>
+    <RootNamespace>PID_2017_Castro</RootNamespace>
+    <AssemblyName>PID_2017_Castro</AssemblyName>
+    <FileAlignment>512</FileAlignment>
+    <MyType>WindowsForms</MyType>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <PublishUrl>publicar\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>0</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <DefineDebug>true</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DocumentationFile>PID_2017_Castro.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+    <CodeAnalysisRuleSet>MixedRecommendedRules.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <DefineDebug>false</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DocumentationFile>PID_2017_Castro.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionExplicit>On</OptionExplicit>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionCompare>Binary</OptionCompare>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionStrict>Off</OptionStrict>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionInfer>On</OptionInfer>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationIcon>UTE-min.ico</ApplicationIcon>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+  </ItemGroup>
+  <ItemGroup>
+    <Import Include="Microsoft.VisualBasic" />
+    <Import Include="System" />
+    <Import Include="System.Collections" />
+    <Import Include="System.Collections.Generic" />
+    <Import Include="System.Data" />
+    <Import Include="System.Drawing" />
+    <Import Include="System.Diagnostics" />
+    <Import Include="System.Windows.Forms" />
+    <Import Include="System.Linq" />
+    <Import Include="System.Xml.Linq" />
+    <Import Include="System.Threading.Tasks" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="frmEspejos.Designer.vb">
+      <DependentUpon>frmEspejos.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmEspejos.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmEtiquetamiento.Designer.vb">
+      <DependentUpon>frmEtiquetamiento.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmEtiquetamiento.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmHistograma.Designer.vb">
+      <DependentUpon>frmHistograma.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmHistograma.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmIntensidad.Designer.vb">
+      <DependentUpon>frmIntensidad.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmIntensidad.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmMorfologia.Designer.vb">
+      <DependentUpon>frmMorfologia.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmMorfologia.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmPlanos.Designer.vb">
+      <DependentUpon>frmPlanos.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmPlanos.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmRegionInteres.Designer.vb">
+      <DependentUpon>frmRegionInteres.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmRegionInteres.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmTransformaciones.Designer.vb">
+      <DependentUpon>frmTransformaciones.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmTransformaciones.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Principal.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Principal.Designer.vb">
+      <DependentUpon>Principal.vb</DependentUpon>
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmDescomposicionRGB.Designer.vb">
+      <DependentUpon>frmDescomposicionRGB.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmDescomposicionRGB.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmExplorador.Designer.vb">
+      <DependentUpon>FrmExplorador.vb</DependentUpon>
+    </Compile>
+    <Compile Include="FrmExplorador.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmGenerador.Designer.vb">
+      <DependentUpon>frmGenerador.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmGenerador.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmOperaciones.Designer.vb">
+      <DependentUpon>frmOperaciones.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmOperaciones.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmPerfiles.Designer.vb">
+      <DependentUpon>frmPerfiles.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmPerfiles.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="My Project\AssemblyInfo.vb" />
+    <Compile Include="My Project\Application.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Application.myapp</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\Resources.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\Settings.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="util_abr_2017.vb" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="frmEspejos.resx">
+      <DependentUpon>frmEspejos.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmEtiquetamiento.resx">
+      <DependentUpon>frmEtiquetamiento.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmHistograma.resx">
+      <DependentUpon>frmHistograma.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmIntensidad.resx">
+      <DependentUpon>frmIntensidad.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmMorfologia.resx">
+      <DependentUpon>frmMorfologia.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmPlanos.resx">
+      <DependentUpon>frmPlanos.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmRegionInteres.resx">
+      <DependentUpon>frmRegionInteres.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmTransformaciones.resx">
+      <DependentUpon>frmTransformaciones.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Principal.resx">
+      <DependentUpon>Principal.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmDescomposicionRGB.resx">
+      <DependentUpon>frmDescomposicionRGB.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmExplorador.resx">
+      <DependentUpon>FrmExplorador.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmGenerador.resx">
+      <DependentUpon>frmGenerador.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmOperaciones.resx">
+      <DependentUpon>frmOperaciones.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmPerfiles.resx">
+      <DependentUpon>frmPerfiles.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="My Project\Resources.resx">
+      <Generator>VbMyResourcesResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.vb</LastGenOutput>
+      <CustomToolNamespace>My.Resources</CustomToolNamespace>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="My Project\Application.myapp">
+      <Generator>MyApplicationCodeGenerator</Generator>
+      <LastGenOutput>Application.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="My Project\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <CustomToolNamespace>My</CustomToolNamespace>
+      <LastGenOutput>Settings.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include=".NETFramework,Version=v4.5">
+      <Visible>False</Visible>
+      <ProductName>Microsoft .NET Framework 4.5 %28x86 y x64%29</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Client.3.5">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1 Client Profile</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\fondoprincipal.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\salirinicio1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\BANNER2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\path2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\g6.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\path3.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\g8.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Layer_5.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Layer_10.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\logo_fcingeniria.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="UTE-min.ico" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
